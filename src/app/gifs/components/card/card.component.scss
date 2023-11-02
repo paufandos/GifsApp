@@ -1,0 +1,13 @@
+.card-shadow {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-width: 0;
+}
+
+.card-height {
+  height: 300px;
+}
+
+.card>img {
+  height: 225px;
+  object-fit: cover;
+}
