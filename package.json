@@ -3,10 +3,18 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve -o",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "delete:docs": "del docs",
+    "delete:dist": "del dist",
+    "copy:dist": "copyfiles dist/bases/* ./docs -f",
+    "build:href": "ng build --base-href ./",
+    "git:add-all": "git add *",
+    "git:commit-deploy": "npm run git:add-all && git commit -m \"deploy(): GitHub Pages Deploy\"",
+    "git:push": "npm run git:commit-deploy && git push",
+    "build:gh-pages": "npm run delete:docs && npm run delete:dist && npm run build:href && npm run copy:dist && npm run git:push"
   },
   "private": true,
   "dependencies": {
@@ -18,6 +26,7 @@
     "@angular/platform-browser": "^15.2.0",
     "@angular/platform-browser-dynamic": "^15.2.0",
     "@angular/router": "^15.2.0",
+    "copyfiles": "^2.4.1",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.12.0"
