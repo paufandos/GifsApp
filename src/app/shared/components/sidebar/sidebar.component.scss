@@ -1,7 +1,8 @@
 #sidebar {
   height: 100%;
   min-height: 100vh;
-  width: 175px;
+  width: 130px;
+  text-align: center;
 }
 
 .tag {
@@ -12,7 +13,7 @@
 
 @media (min-width: 576px) {
   #sidebar {
-    width: 200px;
+    width: 175px;
   }
 }
 
@@ -26,7 +27,6 @@
   .tag {
     font-size: 14px;
   }
-
 
   #sidebar {
     width: 250px;
