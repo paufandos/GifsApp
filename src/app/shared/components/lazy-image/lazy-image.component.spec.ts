@@ -1,17 +1,17 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { SearchBoxComponent } from './search-box.component';
+import { LazyImageComponent } from './lazy-image.component';
 
-describe('SearchBoxComponent', () => {
-  let component: SearchBoxComponent;
-  let fixture: ComponentFixture<SearchBoxComponent>;
+describe('LazyImageComponent', () => {
+  let component: LazyImageComponent;
+  let fixture: ComponentFixture<LazyImageComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [SearchBoxComponent]
+      declarations: [LazyImageComponent]
     })
       .compileComponents();
 
-    fixture = TestBed.createComponent(SearchBoxComponent);
+    fixture = TestBed.createComponent(LazyImageComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

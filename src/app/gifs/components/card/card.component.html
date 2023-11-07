@@ -1,8 +1,8 @@
-<div class="card mb-2 text-center bg-dark card-shadow card-height">
-  <img class="card-img-top" src="{{gif.images.downsized_medium.url}}" alt="{{gif.title}}">
+<div class=" card mb-2 text-center bg-dark card-shadow card-height">
+  <shared-lazy-image [url]="gif.images.downsized_medium.url" [alt]="gif.title"></shared-lazy-image>
   <div class="card-body text-white d-flex justify-content-center align-items-center">
     <p class="card-text">
-      {{ gif.title | titlecase}}
+      {{ gif.title || 'Gif with no title' | titlecase}}
     </p>
   </div>
 </div>

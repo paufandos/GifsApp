@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { GifService } from '../../services/gif.service';
 import { Gif } from '../../interfaces/gif.interface';
+import { GifService } from '../../services/gif.service';
 
 @Component({
   selector: 'gifs-home-page',

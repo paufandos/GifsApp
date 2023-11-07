@@ -1,6 +1,6 @@
+import { Gif, SearchResponse } from '../interfaces/gif.interface';
 import { HttpClient, HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Gif, SearchResponse } from '../interfaces/gif.interface';
 
 const GIPHI_API_KEY = 'Vee0yYDKJPGPtAnMzhZomrBrl8ExCXhl'
 
