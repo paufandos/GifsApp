@@ -9,7 +9,7 @@
     "test": "ng test",
     "delete:docs": "del docs",
     "delete:dist": "del dist",
-    "copy:dist": "copyfiles dist/03_gifs_app/* ./docs -f",
+    "copy:dist": "copyfiles dist/03_gifs_app/* ./docs",
     "build:href": "ng build --base-href ./",
     "git:add-all": "git add *",
     "git:commit-deploy": "npm run git:add-all && git commit -m \"deploy(): GitHub Pages Deploy\"",
